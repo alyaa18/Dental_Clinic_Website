@@ -1,0 +1,202 @@
+/* General Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+    color: #021031;
+  }
+  
+  h1, h2 {
+    color: #1b2275;
+    text-align: center;
+    margin: 30px 0 20px;
+  }
+  
+  /* h1 {
+    font-size: 52px;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+   */
+  h2 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 25px;
+    /* line-height: 1.8; */
+    padding: 0 20px;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(180deg, #115599, #96c2ec);
+    padding: 30px 20px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  }
+  
+  header h1 {
+    color: #ffffff;
+    margin: 0;
+    font-size: 50px;
+  }
+  
+  .home-btn {
+    position: absolute;
+    left: 20px;
+    top: 35px;
+    background-color: #73a2fa;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .home-btn:hover {
+   background-color: #495cc8;
+  }
+  
+  /* Veneers Info Section */
+  #services-main {
+    padding: 60px 5%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  
+  .services-content {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .services-info {
+    flex: 1;
+    min-width: 320px;
+    padding: 20px;
+  }
+  
+  .services-img {
+    flex: 1;
+    max-width: 450px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    animation: fadeInLeft 1s ease-in-out;
+  }
+  
+  /* Before and After Section */
+  #before-after {
+    background-color: #f0f0f0;
+    padding: 60px 5%;
+    text-align: center;
+  }
+  
+  .beforeafter-img {
+    max-width: 90%;
+    border-radius: 14px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    margin-top: 20px;
+  }
+  
+  /* Booking Button */
+  #book-now {
+    text-align: center;
+    margin: 60px 0;
+  }
+  
+  .book-btn {
+    background-color: #73a2fa;
+    color: white;
+    padding: 16px 36px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .book-btn:hover {
+    background-color: #495cc8;
+  }
+  
+  /* Footer */
+  footer {
+    background: linear-gradient(0deg, #115599, #96c2ec);
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 16px;
+  }
+  
+  /* Animations */
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      transform: translateX(-40px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 36px;
+    }
+  
+    h2 {
+      font-size: 28px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  
+    .services-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .services-img {
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+  
+    .home-btn {
+      position: static;
+      display: inline-block;
+      margin: 10px 0 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .book-btn {
+      font-size: 18px;
+      padding: 14px 28px;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+
+
+  

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinics Departement</title>
+
+  <!-- fa-clock -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!-- header navbar section start  -->
+
+    <header>
+
+        <!-- logo name  -->
+        <p class="logo"><span>D</span>ental <span>D</span>epartement   </p>
+        <button onclick="signOut()">Sign Out</button>
+
+        <!-- navbar link  -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li class="dropdown">
+                    <p>about</p>
+                    <ul class="dropdown-content">
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="location.html">Location</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <p>Sign</p>
+                    <ul class="dropdown-content">
+                        <li><a href="SignIn.html">Sign-In</a></li>
+                        <li><a href="SignUp.html">Sign-Up</a></li>
+                    </ul>
+                </li>
+                <li><a href="#doctor">doctor</a></li>
+                <li><a href="#services">Services</a></li>
+                <!-- <li><a href="#contact">contact</a></li> -->
+                <li><a href="#appointment" id="appointmentLink"><span>Make an Appointement</span></a></li>
+            </ul>
+        </nav>
+
+        <div class="fas fa-bars"></div>
+    </header>
+    <!-- header navbar section end  -->
+
+    <!-- home section start  -->
+
+    <section id="home" class="home">
+
+        <div class="row">
+
+            <!-- home images  -->
+            <div class="images">
+                <img src="./images/homepage.png" alt="">
+            </div>
+
+            <!-- home heading  -->
+            <div class="content">
+                <h1>Your<span> Smile, </span>Our<span> Priority</span></h1>
+                <p id="dental-intro-text">
+                At <strong>[Hospital Name]</strong>, we take pride in delivering exceptional dental care tailored to the needs of every patient. Our skilled team provides a wide range of treatments, from preventive cleanings to advanced restorative procedures.
+                <span id="more-text" style="display: none;">
+                 Whether you need a routine exam, root canal therapy, teeth whitening, or advanced dental implants, our team uses the latest techniques to deliver excellent results with minimal discomfort. Our goal is to not only improve your dental health, but also boost your confidence with a brighter, healthier smile. We are proud to serve patients of all ages and invite you to explore our full range of services below.
+                </span>
+                </p>
+                <button id="read-more-btn" onclick="toggleReadMore()">Read More</button>
+            </div>
+        </div>
+    </section>
+    <!-- home section end  -->
+
+    
+  <!-- services section start -->
+  <section id="services">
+    <h2 class="heading">Our Services</h2>
+
+    <!-- <div class="scroll-buttons">
+      <button onclick="scrollServicesLeft()">←</button>
+      <button onclick="scrollServicesRight()">→</button>
+    </div> -->
+
+    <div class="service-scroll-container" id="serviceScroll">
+      <a href="jaw-implant.html" class="serviceCard">
+        <img src="./images/jaw-implant.png" alt="Jaw Implant">
+        <h3>JAW IMPLANT</h3>
+        <p>Reconstructive procedures</p>
+ 
+      </a>
+
+      <a href="implants.html" class="serviceCard">
+
+        <img src="./images/implants.png" alt="Implant">
+        <h3>IMPLANT</h3>
+        <p>Replace missing teeth</p>
+
+      </a>
+
+      <a href="whitening.html" class="serviceCard">
+        <img src="./images/whitening.jpg" alt="Whitening">
+        <h3>WHITENING</h3>
+        <p>Brighten your smile</p>
+
+      </a>
+
+      <a href="roots.html" class="serviceCard">
+        <img src="./images/roots.png" alt="Roots">
+        <h3>ROOTS</h3>
+        <p>Root canal treatments</p>
+
+      </a>
+
+      <a href="cleaning.html" class="serviceCard">
+        <img src="./images/cleaning.png" alt="Cleaning">
+        <h3>CLEANING</h3>
+        <p>Professional dental cleaning</p>
+
+      </a>
+
+      <a href="veneer.html" class="serviceCard">
+        <img src="./images/veneer.png" alt="Veneer">
+        <h3>VENEER</h3>
+        <p>Improve tooth appearance</p>
+
+      </a>
+    </div>
+  </section>
+<!-- services section end -->
+
+ <!-- Doctor section start  -->
+
+ <section id="doctor" class="card">
+
+    <div class="container">
+
+      <h1 class="heading">doctors</h1>
+      <h3 class="title">our professional doctors</h3>
+
+      <div class="box-container">
+
+        <!-- start here  -->
+        <div class="box">
+          <img src="./images/doctor-4.jpg" alt="Docter 1">
+
+          <div class="content">
+            <p>
+              <h2>Emily Johnson</h2>
+            </p>
+            <!-- <p>professional</p> -->
+            <p class="bio">Dr. Emily Johnson has over 10 years of experience in general dentistry, with a focus on
+              preventive care and restorative treatments. She is known for his compassionate approach and dedication to
+              patient comfort.</p>
+
+          </div>
+        </div>
+        <!-- end here  -->
+
+        <!-- start here  -->
+        <div class="box">
+          <img src="./images/doctor-2.jpg" alt="Doctor 2">
+
+          <div class="content">
+            <p>
+              <h2> Sophia Martinez </h2>
+            </p>
+            <!-- <p>specialist</p> -->
+            <p class="bio">Dr.Sophia Martinez specializes in orthodontics and has treated hundreds of patients with
+              complex dental issues. She is passionate about creating personalized treatment plans that ensure optimal
+              results.</p>
+
+          </div>
+        </div>
+        <!-- end here  -->
+
+        <!-- start here  -->
+        <div class="box">
+          <img src="./images/doctor-5.jpg" alt="Doctor 3">
+          <div class="content">
+            <p>
+              <h2>James Anderson</h2>
+              <p class="bio">Dr. James Anderson is a dedicated trainee with a focus on pediatric dentistry. He is
+                currently gaining experience under the supervision of senior specialists and is eager to contribute to
+                the field.</p>
+            <p>
+            <p>trainee</p>
+          </div>
+        </div>
+        <!-- end here  -->
+
+      </div>
+    </div>
+  </section>
+  <!-- dcotors section end  -->
+
+    
+ 
+<!-- appointement section start  -->
+
+<!-- Appointment Section Start -->
+<section id="appointment" class="appointment">
+    <h1 class="heading">Make an Appointment</h1>
+    <h3 class="title">Pick your Appointment time now</h3>
+
+    <div class="row">
+      <div class="form-container">
+        <form id="appointmentForm">
+          <span>Your name :</span>
+          <input type="text" name="fullName" placeholder="Enter your name" class="box" required>
+
+          <span>Your email :</span>
+          <input type="email" name="email" placeholder="Enter your email" class="box" required>
+
+          <span>Your password :</span>
+          <input type="tel" name="phone" placeholder="Enter your password" class="box" required>
+
+          <span>Appointment date:</span>
+          <input type="datetime-local" name="date" class="box" required>
+
+          <!-- Service Selection -->
+          <span>Select Service :</span>
+          <select name="service" class="box" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="JAW IMPLANT">JAW IMPLANT</option>
+            <option value="IMPLANT">IMPLANT</option>
+            <option value="WHITENING">WHITENING</option>
+            <option value="ROOTS">ROOTS</option>
+            <option value="CLEANING">CLEANING</option>
+             <option value="VENEER">VENEER</option>
+
+          </select>
+
+<textarea name="message" placeholder="Enter patient's medical history" class="box" rows="4"></textarea>
+
+          <input type="submit" value="Make appointment" class="link-btn">
+        </form>
+      </div>
+    </div>
+</section>
+
+
+
+
+    <!--  -->
+
+  
+    <section class="footer">
+
+        <div class="box">
+          <h2 class="logo"><span>D</span>ental <span>D</span>epartement</h2>
+    
+          <p>we take pride in delivering exceptional dental care tailored to the needs of every patient. Our skilled team
+            provides a wide range of treatments, from preventive cleanings to advanced restorative procedures.</p>
+        </div>
+        <div class="box">
+          <h2 class="logo"><span>F</span>ollow <span>U</span>s</h2>
+          <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social fb">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social tw">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://plus.google.com" target="_blank" class="social gp">
+              <i class="fab fa-google-plus-g"></i>
+            </a>
+          </div>
+        </div>
+    
+    
+    
+        <div class="box">
+          <h2 class="logo"><span>L</span>inks</h2>
+    
+          <a href="#home">home</a>
+          <!-- <a href="#">about</a> -->
+          <a href="#doctor">Doctors</a>
+          <a href="#services">Services</a>
+          <!-- <a href="#">contact</a> -->
+          <a href="#appointment">Appointement</a>
+          <!-- Working Hours Section -->
+           <div class="working-hours">
+            <i class="fas fa-clock"></i>
+            <p class="working-hours-text">
+              working-hours
+              : from Saturday to Thursday : 9:00 AM - 5:00 PM <br>
+              Friday: Closed
+            </p>
+          </div>
+        </div>
+
+      </section>
+    
+      <!-- custom js file link  -->
+      <script src="main.js"></script>
+    </body>
+    
+    </html>

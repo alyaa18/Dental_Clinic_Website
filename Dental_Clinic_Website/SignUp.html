@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Patient Sign-Up</title>
+        <link rel="stylesheet" href="SignUp-css.css">
+</head>
+<body>
+  <h2>Patient Sign-Up</h2>
+  <form id="signupForm">
+    <input type="text" id="signupName" placeholder="Full Name" required><br>
+    <input type="email" id="signupEmail" placeholder="Email" required><br>
+    <input type="password" id="signupPassword" placeholder="Password" required><br>
+    <button type="submit">Sign Up</button>
+  </form>
+
+  <script>
+    document.getElementById("signupForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const name = document.getElementById("signupName").value;
+      const email = document.getElementById("signupEmail").value;
+      const password = document.getElementById("signupPassword").value;
+
+      if (email.startsWith("dr.")) {
+        alert("Doctors do not sign up here.");
+        return;
+      }
+
+      let users = JSON.parse(sessionStorage.getItem("users") || "[]");
+      if (users.find(u => u.email === email)) {
+        alert("User already exists.");
+        return;
+      }
+
+      users.push({ name, email, password, role: "patient" });
+      sessionStorage.setItem("users", JSON.stringify(users));
+      alert("Sign-up successful. Please sign in.");
+      window.location.href = "signin.html";
+    });
+  </script>
+</body>
+</html>
